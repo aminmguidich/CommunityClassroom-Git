@@ -1,0 +1,61 @@
+git init
+- Initializes a new Git repository in the current directory.
+
+git status
+- Displays the state of the working directory and staging area, showing which files are staged, unstaged, or untracked.
+
+git add .
+- Stages all changes in the current directory for the next commit.
+
+git commit -m "message"
+- Commits the staged changes with a descriptive message.
+
+git restore --staged file.txt
+- Unstages the specified file, keeping the changes in the working directory.
+
+git log
+- Shows the commit history of the repository.
+
+git reset <hashcode>
+- Resets the repository to a specific commit, identified by the commit hash.
+
+git stash
+- Temporarily saves uncommitted changes without committing them.
+
+git stash pop
+- Applies the stashed changes back to the working directory and removes them from the stash list.
+
+git stash clear
+- Deletes all stored stashes, permanently discarding the changes.
+
+git remote add origin <URL>
+- Links the local repository to a remote repository (commonly on GitHub/GitLab).
+
+git remote -v
+- Lists the remote connections to the repository.
+
+git push origin master
+- Pushes the changes from the local master branch to the origin remote repository.
+
+git branch feature
+- Creates a new branch called "feature" to work on a specific task.
+
+git checkout feature
+- Switches to the "feature" branch.
+
+git checkout main
+- Switches back to the "main" (or master) branch.
+
+git merge feature
+- Merges the changes from the "feature" branch into the current branch.
+
+git clone <URL>
+- Creates a local copy of a remote repository.
+
+Creating a Pull Request:
+1/ git remote add upstream <URL>
+- Adds the original repository (upstream) as a remote.
+2/ Create a new branch and push on it
+- Create a new branch, switch to it, and push your changes.
+3/ Create a pull request
+- After pushing the branch, create a pull request on the hosting service (GitHub, etc.).
