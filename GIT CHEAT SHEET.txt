@@ -19,6 +19,10 @@ git log
 git reset <hashcode>
 - Resets the repository to a specific commit, identified by the commit hash.
 
+git revert <commit-hash>
+- Creates a new commit that undoes the changes made by the specified commit.
+- Unlike `git reset`, this command preserves the commit history, making it a safer option for undoing changes.
+
 git stash
 - Temporarily saves uncommitted changes without committing them.
 
